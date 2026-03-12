@@ -8,7 +8,7 @@ int addNewClass(struct st_class* c[], int csize){
 
 	printf(">> code number > ");
 	scanf("%d", &(p->code));
-	//과목 코드 중복 예외 처리
+	/* 과목 코드 중복 예외 처리 */
 	for(int i=0; i<csize; i++){
 		if(c[i]->code == p->code){
 			printf("> Don't allow the duplicate class code.\n");
@@ -31,9 +31,7 @@ void editClass(struct st_class* c[], int csize){
 	int code;
 	printf(">> Enter a code of class > ");
 	scanf("%d", &code);
-	/* 과목코드를 입력받은 후 수정작업을 진행하기 위해 과목구조체 포인터의 값을 할당하는 과정을 코드에 반영하여 수정하라 */
-	/* 과목코드가 존재하지 않는 경우도 적절하게 처리하라. */
-	//과목 코드 존재하지 않음 예외 처리
+	/* 과목코드를 입력받은 후 수정작업을 진행하기 위해 과목구조체 포인터의 값을 할당하는 과정 */
 	int found = 0;
 	for(int i=0; i<csize; i++){
 		if(c[i]->code == code){
@@ -42,6 +40,7 @@ void editClass(struct st_class* c[], int csize){
 			break;
 		}
 	}
+	/* 과목코드가 존재하지 않는 경우 예외 처리*/
 	if(!found){
 		printf("> Class not exist.\n");
 		return;
