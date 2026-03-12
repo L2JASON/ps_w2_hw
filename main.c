@@ -138,6 +138,13 @@ int addNewClass(struct st_class* c[], int csize){
 
 	printf(">> code number > ");
 	scanf("%d", &(p->code));
+	//과목 코드 중복 예외 처리
+	for(int i=0; i<csize; i++){
+		if(c[i]->code == p->code){
+			printf("> Don't allow the duplicate class code.\n");
+			return csize;
+		}
+	}
 	printf(">> class name > ");
 	scanf("%s", p->name);
 	printf(">> credits > ");
