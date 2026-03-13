@@ -1,11 +1,7 @@
 #include "modify.h"
-// You must complete these functions.
+
 int addNewClass(struct st_class* c[], int csize){
-// Caution : Don't allow the duplicate class code.
-// You must complete this function.
-
 	struct st_class* p = (struct st_class*)malloc(sizeof(struct st_class));
-
 	printf(">> code number > ");
 	scanf("%d", &(p->code));
 	/* 과목 코드 중복 예외 처리 */
