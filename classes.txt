@@ -19,3 +19,4 @@
 309 ComputerVision 3 1
 401 Capstone1 4 1
 501 Education 3 1
+601 EF 3 1

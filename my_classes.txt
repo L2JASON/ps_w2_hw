@@ -1,6 +1,4 @@
 My Classes
 1. [201] EngineeringBasic [credit 3 - A+~F]
 2. [202] ComputerArchitecture [credit 2 - A+~F]
-3. [203] WebService [credit 3 - A+~F]
-4. [501] Education [credit 3 - A+~F]
-All : 4 classes, 11 credits (A+~F 0 credits, P/F 4 credits)
+All : 2 classes, 5 credits (A+~F 0 credits, P/F 2 credits)
